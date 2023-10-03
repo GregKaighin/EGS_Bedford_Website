@@ -34,7 +34,7 @@ body {
     font-size: 100%;
   }
   .navbar-light .navbar-brand {
-    color: #fffff0;
+    color: #ffa500;
   }
   .navbar-light .navbar-brand:hover {
     color: #fffff0;
@@ -79,7 +79,7 @@ body {
   }
  /*------------------------------------Jumbotron hero*/
 .jumbo-hero {
-  background-color: #fffff0;
+  background-color: #221d17;
   background: url("../images/hero/pexels-onics-energy.jpg");
   border: 2px solid #221d17;
   background-size: cover;
@@ -103,7 +103,7 @@ body {
     rgb(255, 255, 240, 1),
     rgb(233, 231, 148)
   );
-  border: 2px solid #8b0000;
+  border: 2px solid #ffa500;
   border-radius: 12px;
   margin-bottom: 20px;
   -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
