@@ -1,0 +1,82 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #221d17;
+    background-color: #fffff0;
+  }
+  html,
+  body {
+      height: 100%;
+      scroll-behavior: smooth;
+  }
+  .navbar-light {
+    color: #221d17;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid rgb(34, 29, 23);
+    margin-bottom: 20px;
+    -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+      rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+    -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+      rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+    box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+      rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+  }
+  .bg-light {
+    background-color: #fffff0;
+    background: linear-gradient(to bottom right, #fffff0, #fffff0);
+    opacity: 0.98;
+  }
+  /*------------------------------------Navbar Brand and Link Colours*/
+  .logo {
+    font-size: 150%;
+  }
+  .logo-name {
+    font-size: 100%;
+  }
+  .navbar-light .navbar-brand {
+    color: #221d17;
+  }
+  .navbar-light .navbar-brand:hover {
+    color: #221d17;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #221d17;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #221d17;
+  }
+  /*------------------------------------Font Awesome Icon Colours*/
+  .container .fa-home {
+    color: #8b0000;
+  }
+  .container .fa-headphones-alt {
+    color: #006400;
+  }
+  .container .fa-book-open {
+    color: #000080;
+  }
+  .container .fa-comment {
+    color: #ffa500;
+  }
+  /*------------------------------------Navbar Toggler Colours and Hover Underscore*/
+  .navbar-light .navbar-toggler {
+    border-color: #221d17;
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 250, 0.25),
+      rgb(209, 209, 209)
+    );
+    -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+      rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+    -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+      rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+    box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+      rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #221d17;
+    border-bottom: 1px solid #221d17;
+  }
+  .navbar-light .navbar-toggler:active {
+    background: #dda5a1;
+  }
