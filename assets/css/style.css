@@ -110,8 +110,8 @@ body {
 /*------------------------------------Jumbotron hero Overlay Shape Home Page*/
 .jumbo-hero .overlay-shape-1 {
   margin-top: 140px;
-  width: 360px;
-  height: 180px;
+  width: 300px;
+  height: 120px;
   color: #221d17;
   background-image: linear-gradient(to bottom right,
       rgb(255, 255, 240, 1),
