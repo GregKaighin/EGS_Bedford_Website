@@ -206,6 +206,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.bullets {
+  list-style: none;
+}
+.bullets li::before {
+  content: "•";
+  color: #ffa500;
+  font-weight: bold;
+  display: inline-block;
+  width: 15px;
+}
 /*------------------------------------Footer Social Links*/
 .social-links {
   margin-top: 24px;
