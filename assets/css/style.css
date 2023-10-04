@@ -12,10 +12,10 @@ body {
 
 /*------------------------------------Navbar Colours*/
 .navbar-light {
-  color: #221d17;
+  color: #ffa500;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border: 2px solid rgb(34, 29, 23);
+  border: 2px solid #ffa500(34, 29, 23);
   margin-bottom: 20px;
   -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
     rgba(14, 30, 37, 0.32) 0 2px 16px 0;
@@ -70,9 +70,9 @@ body {
 
 /*------------------------------------Navbar Toggler Colours and Hover Underscore*/
 .navbar-light .navbar-toggler {
-  border-color: #221d17;
+  border-color: #ffa500;
   background: linear-gradient(to bottom right,
-      rgba(255, 255, 250, 0.25),
+      rgba(79, 171, 214, 0.25),
       rgb(209, 209, 209));
   -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
     rgba(14, 30, 37, 0.32) 0 2px 16px 0;
@@ -93,9 +93,9 @@ body {
 
 /*------------------------------------Jumbotron hero*/
 .jumbo-hero {
-  background-color: #221d17;
+  background-color: #ffa500;
   background: url("../images/hero/pexels-onics-energy.jpg");
-  border: 2px solid #221d17;
+  border: 2px solid #ffa500;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
@@ -216,6 +216,25 @@ body {
   display: inline-block;
   width: 15px;
 }
+/*------------------------------------About Me*/
+.about-us {
+  text-align: center;
+}
+.about-us .about-us-heading {
+  margin-top: 36px;
+  font-size: 150%;
+  font-weight: 300;
+  color: #ffa500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.about-us p {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
 /*------------------------------------Footer Social Links*/
 .social-links {
   margin-top: 24px;
@@ -234,4 +253,56 @@ p.footer-heading {
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
+}
+/*---------------------------------Enquiries Form*/
+.enquiries-heading {
+  font-size: 150%;
+  font-weight: 300;
+  margin-top: 24px;
+  color: #ffa500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.form-control {
+  margin-bottom: 2px;
+  border-color: #221d17;
+  background-color: lightyellow;
+  letter-spacing: 1px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+  
+}
+.contact-heading {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #221d17;
+  letter-spacing: 2px;
+}
+.center-form {
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 67%;
+}
+/*------------------------------------Enquiries Form Modal*/
+.modal-content {
+  background-color: #fffff0;
+  border: solid 1px #221d17;
+  margin-bottom: 20px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+}
+.modal-header {
+  border: none;
+}
+.modal-footer {
+  border: none;
 }
