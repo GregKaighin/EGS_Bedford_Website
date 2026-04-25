@@ -2,7 +2,7 @@
    BASE
    ============================================================ */
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #fffff0;
     background-color: #221d17;
     scroll-behavior: smooth;
@@ -172,7 +172,7 @@ body {
    SERVICES
    ============================================================ */
 .services-section {
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
     background-color: #221d17;
 }
 .section-heading {
@@ -182,20 +182,37 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.section-heading::after,
+.about-us-heading::after,
+.enquiries-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5rem;
+    height: 2px;
+    background: #ffa500;
+    border-radius: 1px;
 }
 .service-card {
     background: #2a2420;
     border: 1px solid rgba(255,165,0,0.15);
     border-radius: 8px;
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.75rem;
     text-align: center;
     height: 100%;
-    transition: border-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .service-card:hover {
-    border-color: rgba(255,165,0,0.5);
-    transform: translateY(-4px);
+    border-color: rgba(255,165,0,0.45);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.45);
 }
 .service-icon {
     font-size: 2rem;
@@ -223,7 +240,7 @@ body {
    ============================================================ */
 .about-us {
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 5rem 1rem;
     background: #2a2420;
 }
 .about-us .about-us-heading {
@@ -232,7 +249,9 @@ body {
     color: #ffa500;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    position: relative;
 }
 .about-us p {
     font-size: 1rem;
@@ -246,7 +265,7 @@ body {
    OWNER BIO
    ============================================================ */
 .owner-bio {
-    padding: 3rem 1.5rem;
+    padding: 5rem 1.5rem;
     background-color: #221d17;
 }
 .owner-portrait {
@@ -277,8 +296,8 @@ body {
    TESTIMONIALS
    ============================================================ */
 .testimonials-section {
-    padding: 4rem 1rem 3rem;
-    background: #221d17;
+    padding: 5rem 1rem 4rem;
+    background: #2a2420;
 }
 .testimonial-card {
     max-width: 720px;
@@ -331,13 +350,15 @@ body {
    FORM
    ============================================================ */
 .about-me {
-    padding: 3rem 1rem;
-    background: #2a2420;
+    padding: 5rem 1rem;
+    background: #221d17;
 }
 .enquiries-heading {
     font-size: 1.6rem;
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    position: relative;
     color: #ffa500;
     text-align: center;
     text-transform: uppercase;
@@ -360,36 +381,65 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(255,165,0,0.15);
 }
 .center-form {
-    padding-top: 10px;
+    padding-top: 0.5rem;
     margin: 0 auto;
-    max-width: 67%;
 }
 .modal-content {
-    background-color: #fffff0;
-    color: #221d17;
-    border: solid 1px #221d17;
+    background-color: #2a2420;
+    color: #fffff0;
+    border: 1px solid rgba(255,165,0,0.3);
 }
 .modal-header,
 .modal-footer {
     border: none;
 }
+.btn-close {
+    filter: invert(1) opacity(0.7);
+}
+.btn-close:hover {
+    filter: invert(1) opacity(1);
+}
 
 /* ============================================================
    FOOTER
    ============================================================ */
-.social-links {
-    margin-top: 24px;
-    font-size: 2.4rem;
-    text-align: center;
+footer {
+    background: #1a1510;
+    border-top: 1px solid rgba(255,165,0,0.2);
+    padding: 2.5rem 1.5rem 1.5rem;
 }
-p.footer-heading {
-    font-family: 'Roboto', sans-serif;
+.footer-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer-brand {
     color: #ffa500;
-    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+.footer-sub {
+    color: #777;
+    font-size: 0.75rem;
     letter-spacing: 1px;
-    margin-top: 0.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+p.footer-copyright {
+    color: #555;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: right;
 }
 
 /* ============================================================
