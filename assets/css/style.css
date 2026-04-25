@@ -203,7 +203,7 @@ body {
     margin-bottom: 1rem;
     display: block;
 }
-.service-card h5 {
+.service-card h3 {
     color: #fffff0;
     font-size: 1rem;
     font-weight: 600;
@@ -316,6 +316,8 @@ body {
     border: none;
     background-color: #ffa500;
     opacity: 0.35;
+    padding: 8px;
+    margin: 0 6px;
 }
 .testimonial-indicators .active {
     opacity: 1;
