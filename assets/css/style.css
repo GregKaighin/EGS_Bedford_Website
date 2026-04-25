@@ -345,14 +345,19 @@ body {
 }
 .form-control {
     margin-bottom: 8px;
-    border-color: #3a3228;
-    background-color: #fffff0;
-    color: #221d17;
+    background-color: #2e2820;
+    border-color: rgba(255,165,0,0.25);
+    color: #fffff0;
     letter-spacing: 0.5px;
 }
+.form-control::placeholder {
+    color: #888;
+}
 .form-control:focus {
+    background-color: #332d26;
     border-color: #ffa500;
-    box-shadow: 0 0 0 0.2rem rgba(255,165,0,0.2);
+    color: #fffff0;
+    box-shadow: 0 0 0 0.2rem rgba(255,165,0,0.15);
 }
 .center-form {
     padding-top: 10px;
