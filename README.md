@@ -1,5 +1,7 @@
 # EGS Bedford — Electrical & Gas Services Website
 
+**Live site: [https://gregkaighin.github.io/EGS_Bedford_Website/](https://gregkaighin.github.io/EGS_Bedford_Website/)**
+
 A static front-end website for EGS Bedford, a family-run electrical and gas services company based in Bedfordshire. The site presents the company's services, accreditations, and contact details to prospective customers.
 
 ## Pages
