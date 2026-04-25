@@ -1,308 +1,394 @@
+/* ============================================================
+   BASE
+   ============================================================ */
 body {
-  font-family: "Roboto", sans-serif;
-  color: #fffff0;
-  background-color: #221d17;
+    font-family: "Roboto", sans-serif;
+    color: #fffff0;
+    background-color: #221d17;
+    scroll-behavior: smooth;
 }
 
-html,
-body {
-  height: 100%;
-  scroll-behavior: smooth;
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.site-nav {
+    background: rgba(34, 29, 23, 0.97);
+    border-bottom: 1px solid rgba(255, 165, 0, 0.2);
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffa500;
+    display: block;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+.nav-logo-sub {
+    font-size: 0.65rem;
+    color: #fffff0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: block;
+}
+.site-nav .nav-link {
+    color: #fffff0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    padding: 0.5rem 0.9rem;
+    transition: color 0.2s ease;
+}
+.site-nav .nav-link:hover {
+    color: #ffa500;
+}
+.nav-cta {
+    background: #ffa500;
+    color: #221d17 !important;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.nav-cta:hover {
+    background: #ffb733;
+    color: #221d17 !important;
+}
+.navbar-toggler {
+    border-color: #ffa500;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffa500' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/*------------------------------------Navbar Colours*/
-.navbar-light {
-  color: lightyellow;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: 2px solid #ffa500(34, 29, 23);
-  margin-bottom: 20px;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: url("../images/hero/pexels-onics-energy.jpg") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, rgba(34,29,23,0.8) 100%);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+}
+.hero-title {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: 700;
+    color: #fffff0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    margin-bottom: 0.5rem;
+}
+.hero-subtitle {
+    font-size: clamp(0.9rem, 2vw, 1.15rem);
+    color: #ffa500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
 }
 
-.bg-light {
-  background: linear-gradient(to bottom right, #221d17, #221d17);
-  opacity: 0.98;
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn-egs {
+    background: #ffa500;
+    color: #221d17;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-egs:hover {
+    background: #ffb733;
+    color: #221d17;
+    transform: translateY(-2px);
+}
+.btn-outline-egs {
+    background: transparent;
+    color: #ffa500;
+    border: 1px solid #ffa500;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s ease;
+}
+.btn-outline-egs:hover {
+    background: #ffa500;
+    color: #221d17;
 }
 
-/*------------------------------------Navbar Brand and Link Colours*/
-.logo {
-  font-size: 150%;
+/* ============================================================
+   TRUST BAR
+   ============================================================ */
+.trust-bar {
+    background: #1a1510;
+    border-top: 1px solid rgba(255,165,0,0.25);
+    border-bottom: 1px solid rgba(255,165,0,0.25);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+.trust-label {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffa500;
+    margin-bottom: 1rem;
+}
+.trust-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.trust-logos img {
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+.trust-logos img:hover {
+    opacity: 1;
 }
 
-.logo-name {
-  font-size: 100%;
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services-section {
+    padding: 4rem 1rem;
+    background-color: #221d17;
+}
+.section-heading {
+    text-align: center;
+    color: #ffa500;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2.5rem;
+}
+.service-card {
+    background: #2a2420;
+    border: 1px solid rgba(255,165,0,0.15);
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    height: 100%;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.service-card:hover {
+    border-color: rgba(255,165,0,0.5);
+    transform: translateY(-4px);
+}
+.service-icon {
+    font-size: 2rem;
+    color: #ffa500;
+    margin-bottom: 1rem;
+    display: block;
+}
+.service-card h5 {
+    color: #fffff0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+.service-card p {
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.navbar-light .navbar-brand {
-  color: #ffa500;
-}
-
-.navbar-light .navbar-brand:hover {
-  color: #fffff0;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #fffff0;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #fffff0;
-}
-
-/*------------------------------------Font Awesome Icon Colours*/
-.container .fa-home {
-  color: #ffa500;
-}
-
-.container .fa-camera {
-  color: #ffa500;
-}
-
-.container .fa-comment {
-  color: #ffa500;
-}
-
-/*------------------------------------Navbar Toggler Colours and Hover Underscore*/
-.navbar-light .navbar-toggler {
-  border-color: #ffa500;
-  background: linear-gradient(to bottom right,
-      rgba(79, 171, 214, 0.25),
-      rgb(209, 209, 209));
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #ffa500;
-  border-bottom: 1px solid #ffa500;
-}
-
-.navbar-light .navbar-toggler:active {
-  background: #ffa500;
-}
-
-/*------------------------------------Jumbotron hero*/
-.jumbo-hero {
-  background-color: #ffa500;
-  background: url("../images/hero/pexels-onics-energy.jpg");
-  border: 2px solid #ffa500;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 20px;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-}
-
-/*------------------------------------Jumbotron hero Overlay Shape Home Page*/
-.jumbo-hero .overlay-shape-1 {
-  margin-top: 140px;
-  width: 300px;
-  height: 120px;
-  color: #221d17;
-  background-image: linear-gradient(to bottom right,
-      rgb(255, 255, 240, 1),
-      rgb(233, 231, 148));
-  border: 2px solid #ffa500;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-}
-
-/*------------------------------------Jumbotron hero Overlay Shape Colour Music Page*/
-.jumbo-hero .overlay-shape-2 {
-  margin-top: 140px;
-  width: 240px;
-  height: 100px;
-  color: #221d17;
-  background-image: linear-gradient(to bottom right,
-      rgb(255, 255, 240, 1),
-      rgb(186, 247, 178));
-  border: 2px solid #006400;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-}
-
-/*------------------------------------Jumbotron hero Overlay Shape Colour Resources Page*/
-.jumbo-hero .overlay-shape-3 {
-  margin-top: 140px;
-  width: 240px;
-  height: 100px;
-  color: #221d17;
-  background-image: linear-gradient(to bottom right,
-      rgb(255, 255, 240, 1),
-      rgb(178, 197, 247));
-  border: 2px solid #00008b;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-}
-
-/*------------------------------------Jumbotron hero Overlay Shape Colour Enquiries Page*/
-.jumbo-hero .overlay-shape-4 {
-  margin-top: 140px;
-  width: 240px;
-  height: 100px;
-  color: #221d17;
-  background-image: linear-gradient(to bottom right,
-      rgb(255, 255, 240, 1),
-      rgb(247, 240, 178));
-  border: 1px solid #ffa500;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-}
-
-/*------------------------------------Jumbotron hero Overlay Text*/
-.overlay-heading {
-  margin-top: 0;
-  padding: 4px;
-  font-size: 140%;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.overlay-text {
-  margin-top: 0;
-  font-size: 100%;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.bullets {
-  list-style: none;
-}
-.bullets li::before {
-  content: "•";
-  color: #ffa500;
-  font-weight: bold;
-  display: inline-block;
-  width: 15px;
-}
-/*------------------------------------About Me*/
+/* ============================================================
+   ABOUT
+   ============================================================ */
 .about-us {
-  text-align: center;
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #2a2420;
 }
 .about-us .about-us-heading {
-  margin-top: 36px;
-  font-size: 150%;
-  font-weight: 300;
-  color: #ffa500;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #ffa500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
 .about-us p {
-  margin-top: 16px;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    color: #ddd;
 }
-/*------------------------------------Footer Social Links*/
-.social-links {
-  margin-top: 24px;
-  font-size: 240%;
-  text-align: center;
+
+/* ============================================================
+   OWNER BIO
+   ============================================================ */
+.owner-bio {
+    padding: 3rem 1.5rem;
+    background-color: #221d17;
 }
-.linkedin-icon {
-  margin-right: 72px;
-  color: #0e76a8;
-  
+.owner-portrait {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffa500;
 }
-/* Footer text */
-p.footer-heading {
-  font-family: 'Roboto', sans-serif;
-  color: #ffa500;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1em;
+.owner-name {
+    color: #ffa500;
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
 }
-/*---------------------------------Enquiries Form*/
+.owner-title {
+    color: #cccccc;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.owner-bio p {
+    color: #ddd;
+    line-height: 1.8;
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials-section {
+    padding: 4rem 1rem 3rem;
+    background: #221d17;
+}
+.testimonial-card {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 2rem 3.5rem;
+}
+.testimonial-stars {
+    color: #ffa500;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    margin-bottom: 1.25rem;
+}
+.testimonial-text {
+    color: #ddd;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    font-style: italic;
+    margin-bottom: 1.25rem;
+}
+.testimonial-author {
+    color: #ffa500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.testimonial-indicators {
+    bottom: 0;
+}
+.testimonial-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffa500;
+    opacity: 0.35;
+}
+.testimonial-indicators .active {
+    opacity: 1;
+}
+#testimonialsCarousel .carousel-control-prev-icon,
+#testimonialsCarousel .carousel-control-next-icon {
+    filter: invert(65%) sepia(80%) saturate(500%) hue-rotate(350deg);
+}
+
+/* ============================================================
+   FORM
+   ============================================================ */
+.about-me {
+    padding: 3rem 1rem;
+    background: #2a2420;
+}
 .enquiries-heading {
-  font-size: 150%;
-  font-weight: 300;
-  margin-top: 24px;
-  color: #ffa500;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: #ffa500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .form-control {
-  margin-bottom: 2px;
-  border-color: #221d17;
-  background-color: lightyellow;
-  letter-spacing: 1px;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  
+    margin-bottom: 8px;
+    border-color: #3a3228;
+    background-color: #fffff0;
+    color: #221d17;
+    letter-spacing: 0.5px;
 }
-.contact-heading {
-  margin-top: 25px;
-  margin-bottom: 20px;
-  color: #221d17;
-  letter-spacing: 2px;
+.form-control:focus {
+    border-color: #ffa500;
+    box-shadow: 0 0 0 0.2rem rgba(255,165,0,0.2);
 }
 .center-form {
-  padding-top: 10px;
-  margin: 0 auto;
-  max-width: 67%;
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 67%;
 }
-/*------------------------------------Enquiries Form Modal*/
 .modal-content {
-  background-color: #fffff0;
-  border: solid 1px #221d17;
-  margin-bottom: 20px;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  -moz-box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
-    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+    background-color: #fffff0;
+    color: #221d17;
+    border: solid 1px #221d17;
 }
-.modal-header {
-  border: none;
-}
+.modal-header,
 .modal-footer {
-  border: none;
+    border: none;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.social-links {
+    margin-top: 24px;
+    font-size: 2.4rem;
+    text-align: center;
+}
+p.footer-heading {
+    font-family: 'Roboto', sans-serif;
+    color: #ffa500;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+/* ============================================================
+   MISC
+   ============================================================ */
+.page-break {
+    border-color: rgba(255,165,0,0.15);
+    margin: 0;
 }

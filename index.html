@@ -4,187 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EGS Bedford</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>EGS Bedford | Electrical & Gas Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-                <a class="navbar-brand js-scroll-trigger" href="index.html">
-                    <h1 class="logo">EGS</h1>
-                    <h2 class="logo-name">Electrical & Gas Services</h2>
-                </a>
-                <div>
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/logo/niceic-logo.svg" alt="..." height="60">
-                    </a>
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/logo/gas-safe-logo.svg" alt="..." height="60">
-                    </a>
-                </div>
-                <button class="navbar-toggler" id="menu-button" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="index.html"><i class="fas fa-home"></i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="gallery.html"><i class="fa-solid fa-camera"></i>
-                                Gallery</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="enquiries.html"><i class="fas fa-comment"></i>
-                                Get a Quote</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="jumbotron jumbo-hero">
-            <div class="container overlay-shape-1">
-                <h3 class="overlay-heading">Electrical & Gas Services</h3>
-                <p class="overlay-text">Bedfordshire and surrounding areas</p>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-md fixed-top site-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="nav-logo">EGS</span>
+                <span class="nav-logo-sub">Electrical & Gas Services</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto align-items-md-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html"><i class="fa-solid fa-camera"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item ms-md-2">
+                        <a class="nav-link nav-cta" href="#enquiries"><i class="fas fa-comment"></i> Get a Quote</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-    <div class="row">
-        <div class="col col-md-4">
-            <ul class="bullets">
-                <li>Electrical rewires</li>
-                <li>Landlords certificates</li>
-            </ul>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center">
+            <h1 class="hero-title">Electrical & Gas Services</h1>
+            <p class="hero-subtitle">Bedfordshire and surrounding areas</p>
+            <a href="#enquiries" class="btn btn-egs mt-3">Get a Free Quote</a>
         </div>
-        <div class="col col-md-4">
-            <ul class="bullets">
-                <li>Boiler servicing, repair & replacements</li>
-                <li>Alarms</li>
-            </ul>
+    </section>
+
+    <!-- ===================== TRUST BAR ===================== -->
+    <section class="trust-bar">
+        <div class="container">
+            <p class="trust-label">Registered & Accredited</p>
+            <div class="trust-logos">
+                <img src="assets/images/logo/niceic-logo.svg" alt="NICEIC Approved Contractor" height="56">
+                <img src="assets/images/logo/gas-safe-logo.svg" alt="Gas Safe Registered" height="56">
+            </div>
         </div>
-        <div class="col col-md-4">
-            <ul class="bullets">
-                <li>Domestic, commercial & industrial installations</li>
-                <li>Plumbing & heating installations</li>
-            </ul>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-heading">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-bolt service-icon"></i>
+                        <h5>Electrical Rewires</h5>
+                        <p>Full and partial rewires for domestic and commercial properties, carried out safely and to the latest regulations.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-fire service-icon"></i>
+                        <h5>Boiler Services</h5>
+                        <p>Installation, repair and servicing of gas boilers. We keep your heating running efficiently and safely all year round.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-file-alt service-icon"></i>
+                        <h5>Landlord Certificates</h5>
+                        <p>Gas safety and electrical inspection certificates for landlords — fully compliant with current UK legislation.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-industry service-icon"></i>
+                        <h5>Commercial & Industrial</h5>
+                        <p>Three-phase power, distribution boards and large-scale electrical installations for commercial and industrial premises.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-tint service-icon"></i>
+                        <h5>Plumbing & Heating</h5>
+                        <p>Central heating installations, radiator upgrades and plumbing works — designed and fitted for long-term reliability.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt service-icon"></i>
+                        <h5>Alarms & Security</h5>
+                        <p>Intruder alarms, smoke detectors and carbon monoxide systems installed to keep your home or business protected.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <hr class="page-break">
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
     <section class="about-us">
         <div class="col col-lg-8 col-sm-10 mx-auto text-center">
             <h3 class="about-us-heading">About Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla, urna vitae efficitur
-                sagittis, orci nunc sagittis ipsum, vitae pulvinar tortor eros vel elit. Aliquam et nulla sollicitudin
-                ligula mollis ultrices. Proin a viverra turpis. Nullam id tincidunt lorem, sed volutpat turpis. Donec
-                molestie sed nunc id porttitor. Sed ex nisl, sagittis eget feugiat at, semper quis ipsum. Curabitur
-                laoreet orci a tristique porttitor. Suspendisse ex erat, tincidunt sed mi eget, suscipit pretium enim.
-                Aliquam mollis egestas leo non rutrum. Vivamus lacus tellus, volutpat in libero ac, tincidunt suscipit
-                massa.</p>
+            <p>EGS Bedford is a family-run electrical and gas services company based in Bedfordshire, serving homeowners, landlords and businesses across the region. We offer a comprehensive range of services — from full electrical rewires and consumer unit upgrades to boiler installations, central heating systems and landlord safety certificates. Whether you need a straightforward repair or a complete installation from scratch, our team brings the same level of care and professionalism to every job.</p>
         </div>
-        <button class="btn btn-light" id="show-more-button" data-toggle="collapse" data-target="#show-more">Show
-            more / Show less</button>
+        <button class="btn btn-outline-egs mt-3" id="show-more-button" data-bs-toggle="collapse" data-bs-target="#show-more">Show more / Show less</button>
         <div id="show-more" class="collapse">
-            <div class="col col-lg-8 col-sm-10 mx-auto text-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla, urna vitae efficitur
-                    sagittis, orci nunc sagittis ipsum, vitae pulvinar tortor eros vel elit. Aliquam et nulla
-                    sollicitudin ligula mollis ultrices. Proin a viverra turpis. Nullam id tincidunt lorem, sed volutpat
-                    turpis. Donec molestie sed nunc id porttitor. Sed ex nisl, sagittis eget feugiat at, semper quis
-                    ipsum. Curabitur laoreet orci a tristique porttitor. Suspendisse ex erat, tincidunt sed mi eget,
-                    suscipit pretium enim. Aliquam mollis egestas leo non rutrum. Vivamus lacus tellus, volutpat in
-                    libero ac, tincidunt suscipit massa.
-                </p><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla, urna vitae efficitur
-                    sagittis, orci nunc sagittis ipsum, vitae pulvinar tortor eros vel elit. Aliquam et nulla
-                    sollicitudin ligula mollis ultrices. Proin a viverra turpis. Nullam id tincidunt lorem, sed volutpat
-                    turpis. Donec molestie sed nunc id porttitor. Sed ex nisl, sagittis eget feugiat at, semper quis
-                    ipsum. Curabitur laoreet orci a tristique porttitor. Suspendisse ex erat, tincidunt sed mi eget,
-                    suscipit pretium enim. Aliquam mollis egestas leo non rutrum. Vivamus lacus tellus, volutpat in
-                    libero ac, tincidunt suscipit massa.</p><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla, urna vitae efficitur
-                    sagittis, orci nunc sagittis ipsum, vitae pulvinar tortor eros vel elit. Aliquam et nulla
-                    sollicitudin ligula mollis ultrices. Proin a viverra turpis. Nullam id tincidunt lorem, sed volutpat
-                    turpis. Donec molestie sed nunc id porttitor. Sed ex nisl, sagittis eget feugiat at, semper quis
-                    ipsum. Curabitur laoreet orci a tristique porttitor. Suspendisse ex erat, tincidunt sed mi eget,
-                    suscipit pretium enim. Aliquam mollis egestas leo non rutrum. Vivamus lacus tellus, volutpat in
-                    libero ac, tincidunt suscipit massa.</p>
+            <div class="col col-lg-8 col-sm-10 mx-auto text-center mt-3">
+                <p>All of our engineers are fully qualified and registered with the relevant industry bodies — NICEIC for electrical work and Gas Safe for all gas and heating installations. This means you can book with confidence, knowing that every job meets current safety standards and is fully compliant with UK regulations.</p><br>
+                <p>We work across a wide range of projects, from single-room upgrades in domestic properties to large-scale commercial and industrial installations. No job is too big or too small, and we always aim to complete work on time, on budget and with minimal disruption to you.</p>
             </div>
         </div>
         <hr class="page-break">
     </section>
-    <!-- Enquiries form - This is a basic form to enable potential customers to get in contact. A modal pops up to say thank you once
-            the send button is pressed. -->
-            <section class="container-fluid about-me">
-                <h3 class="enquiries-heading">Get a Quote</h3>
-                <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
-                    <div class="center-form">
-                        <form onsubmit="return sendMail(this);">
-                            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required />
-                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" required />
-                            <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message (please give some details of the work to be done)"
-                                required></textarea>
-                            <div class="form-row text-center">
-                                <div class="col">
-                                    <button type="submit" class="btn btn-light">Send</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+
+    <!-- ===================== OWNER BIO ===================== -->
+    <section class="owner-bio">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-md-3 text-center">
+                    <img src="https://picsum.photos/seed/stuart/300/300" alt="Stuart Millington" class="owner-portrait">
                 </div>
-                <div class="modal fade" id="thank-you-modal" tabindex="-1" role="dialog" aria-labelledby="thank-you-modal"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h6 class="modal-title">Thank you for your enquiry</h6>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                I'll get back to you soon
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-light"  id="form-reset" data-dismiss="modal" aria-label="ok">OK</button>
-                            </div>
+                <div class="col-md-6">
+                    <h3 class="owner-name">Stuart Millington</h3>
+                    <p class="owner-title">Founder & Lead Engineer</p>
+                    <p>Stuart founded EGS Bedford with a commitment to delivering reliable, high-quality electrical and gas services across Bedfordshire. With over 20 years of hands-on experience in domestic, commercial and industrial installations, Stuart leads every project with a focus on safety, precision and customer satisfaction.</p>
+                    <p>Fully qualified and registered with both NICEIC and Gas Safe, Stuart and his team take pride in their workmanship and the lasting relationships they build with clients throughout the region.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="page-break">
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-heading">What Our Customers Say</h2>
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+                <div class="carousel-indicators testimonial-indicators">
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Stuart and his team were professional, punctual and left everything spotless. The rewire was completed ahead of schedule and the standard of work was excellent. Would highly recommend to anyone."</p>
+                            <p class="testimonial-author">— John D., Bedford</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Fantastic service from start to finish. Had a full boiler installation carried out and the team were knowledgeable, tidy and completed the job on time. Very happy with the result."</p>
+                            <p class="testimonial-author">— Sarah M., Luton</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Used EGS for landlord safety certificates on three of my properties. Fast, reliable and great value. Stuart is always easy to get hold of and delivers exactly what he promises."</p>
+                            <p class="testimonial-author">— Mark T., Biggleswade</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Brilliant work on our commercial premises. Three-phase wiring installed with minimum disruption to the business. Competitive pricing and a top-quality finish throughout."</p>
+                            <p class="testimonial-author">— Karen L., Milton Keynes</p>
                         </div>
                     </div>
                 </div>
-            </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <hr class="page-break">
+
+    <!-- ===================== ENQUIRIES FORM ===================== -->
+    <section class="container-fluid about-me" id="enquiries">
+        <h3 class="enquiries-heading">Get a Quote</h3>
+        <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required />
+                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" required />
+                    <textarea rows="5" name="message" id="message" class="form-control"
+                        placeholder="Message (please give some details of the work to be done)" required></textarea>
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-egs">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal fade" id="thank-you-modal" tabindex="-1" aria-labelledby="thank-you-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Thank you for your enquiry</h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">I'll get back to you soon</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-egs" id="form-reset" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://kit.fontawesome.com/9885b0515b.js" crossorigin="anonymous"></script>
 
-<footer>
-    <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-    <!-- Back to top button -->
-    <script src="assets/js/button.js"></script>
-    <hr class="page-break">
-    <!-- Social-links -->
-    <div class="social-links">
-        <a class="button btn-xxl" href="https://www.linkedin.com/in/stuart-millington-a894a76b/?originalSubdomain=uk"
-            target="_blank" rel="noopener" aria-label="LinkedIn link">
-            <i class="linked-in-icon fab fa-linkedin"></i></a>
-    </div>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <hr class="page-break">
+        <div class="social-links">
+            <a class="button btn-xxl" href="https://www.linkedin.com/in/stuart-millington-a894a76b/?originalSubdomain=uk"
+                target="_blank" rel="noopener" aria-label="LinkedIn link">
+                <i class="linked-in-icon fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div>
+            <p class="footer-heading">&copy; EGS Bedford <script>document.write(new Date().getFullYear())</script></p>
+        </div>
+    </footer>
 
-    <div>
-        <p class="footer-heading">&copy; EGS Bedford <script>
-                document.write(new Date().getFullYear())
-            </script>
-        </p>
-    </div>
-    </div>
-</footer>
 </body>
-
 </html>
